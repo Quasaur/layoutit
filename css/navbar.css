@@ -1,0 +1,47 @@
+nav#pageNavBar{
+    background:#317ca2;
+    background:-o-linear-gradient(top, #3f94bf, #246485);
+    background:-ms-linear-gradient(top, #3f94bf, #246485);
+    background:-moz-linear-gradient(top, #3f94bf, #246485);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #3f94bf), color-stop(1, #246485));
+    background:-webkit-linear-gradient(#3f94bf, #246485);
+    background:linear-gradient(top, #3f94bf, #246485);
+    -moz-box-shadow:0 1px 5px rgba(34,34,34,0.5);
+    -webkit-box-shadow:0 1px 5px rgba(34,34,34,0.5);
+    box-shadow:0 1px 5px rgba(34,34,34,0.5);
+    width:100%;
+    max-width:none;
+    height:50px;
+    margin:0;
+    padding:0;
+    border-bottom:1px solid #1b5572;
+    color: white;
+  }
+.navbar.always-open {
+    border-radius: 0;
+}
+.navbar.always-open .navbar-header {
+  float: none;
+}
+.navbar.always-open .navbar-toggle {
+  display: block;
+}
+.navbar.always-open .navbar-collapse {
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar.always-open .navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar.always-open .navbar-nav {
+  float: none;
+  margin: 7.5px -15px;
+}
+.navbar.always-open .navbar-nav>li {
+  float: none;
+}
+.navbar.always-open .navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
