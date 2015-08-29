@@ -1,5 +1,4 @@
 div#footerRow {
-    height:100px;
     margin-top: 10px;
     border-top:solid 1px #666;
     bottom:0;
@@ -22,4 +21,16 @@ div#footCols {
     width:100%;
     background-color: black;
     z-index: 1000;
+}
+
+@media (min-width: 992px)    {
+    div#footerRow{
+        height: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    div#footerRow {
+        height: 210px;
+    }
 }
