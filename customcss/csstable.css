@@ -31,7 +31,7 @@
 
 
 	 .theader-row {
-	 	background: #8b8b8b;
+	 	background-color: #800020;
 	 	color: #fff;
 
 	 }
@@ -89,6 +89,7 @@
 
 		.theader-row {
 			display: none;
+            background-color: #8b0909;
 		}
 		
 		.cell { 

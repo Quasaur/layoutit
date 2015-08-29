@@ -56,68 +56,283 @@
 			    <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist" style="background-color: lightgrey;">
                   <li class="active"><a id="tab-1" href="#one" role="tab" data-toggle="tab">Events</a></li>
-                  <li class="notsoactive"><a id="tab-2" href="#two" role="tab" data-toggle="tab">People</a></li>
-                  <li class="notsoactive"><a id="tab-3" href="#three" role="tab" data-toggle="tab">Relationships</a></li>
+                  <li><a id="tab-2" href="#two" role="tab" data-toggle="tab">People</a></li>
+                  <li><a id="tab-2" href="#three" role="tab" data-toggle="tab">Places</a></li>
+                  <li><a id="tab-3" href="#four" role="tab" data-toggle="tab">Relationships</a></li>
                 </ul>
 
               <!-- Tab panes -->
                 <div class="tab-content">
                     <div class="tab-pane active" id="one">
                             <div class="graphTable">
+                                <div class="theader-row trow">
+                                    <span class="cell primary">ID</span>
+                                    <span class="cell">Labels</span>
+                                    <span class="cell">Name</span>
+                                    <span class="cell">Caption</span>
+                                    <span class="cell">Type</span>
+                                    <span class="cell">Place</span>
+                                    <span class="cell" style="width: 100px">Bible</span>
+                                    <span class="cell">Gregorian</span>
+                                 </div>
 	                            <div class="theader-row trow">
-                                    <span class="cell primary">Vehcile</span>
-                                    <span class="cell">Exterior</span>
-                                    <span class="cell">Interior</span>
-                                    <span class="cell">Engine</span>
-                                    <span class="cell">Trans</span>
+                                    <span class="cell primary">ID</span>
+                                    <span class="cell">Labels</span>
+                                    <span class="cell">Name</span>
+                                    <span class="cell">Caption</span>
+                                    <span class="cell">Type</span>
+                                    <span class="cell">Place</span>
+                                    <span class="cell">BibleStart</span>
+                                    <span class="cell">BibleEnd</span>
+                                    <span class="cell">GregorianStart</span>
+                                    <span class="cell">GregorianEnd</span>
                                  </div>
                               <div class="trow">
 	                            <input type="radio" name="expand">
-                                <span class="cell primary" data-label="Vehicle">2013 Subaru WRX</span>
-                                <span class="cell" data-label="Exterior">World Rally Blue</span>
-                                 <span class="cell" data-label="Interior">Black</span>
-                                 <span class="cell" data-label="Engine">2.5L H4 Turbo</span>
-                                <span class="cell" data-label="Trans"><a href="">5 Speed</a></span>
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
                               </div>
                               <div class="trow">
 	                            <input type="radio" name="expand">
-                                <span class="cell primary" data-label="Vehicle">2013 Subaru WRX STI</span>
-                                <span class="cell" data-label="Exterior">Crystal Black Silica</span>
-                                 <span class="cell" data-label="Interior">Black</span>
-                                 <span class="cell" data-label="Engine">2.5L H4 Turbo</span>
-                                 <span class="cell" data-label="Trans">6 Speed</span>
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
                               </div>
-                              <div class="trow">
+                                <div class="trow">
 	                            <input type="radio" name="expand">
-                                <span class="cell primary" data-label="Vehicle">2013 Subaru BRZ</span>
-                                <span class="cell" data-label="Exterior">Dark Grey Metallic</span>
-                                 <span class="cell" data-label="Interior">Black</span>
-                                 <span class="cell" data-label="Engine">2.0L H4</span>
-                                 <span class="cell" data-label="Trans">6 Speed</span>
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
                               </div>
-                              <div class="trow">
+                                <div class="trow">
 	                            <input type="radio" name="expand">
-                                <span class="cell primary" data-label="Vehicle">2013 Subaru Legacy</span>
-                                <span class="cell" data-label="Exterior">Satin White Pearl</span>
-                                 <span class="cell" data-label="Interior">Black</span>
-                                 <span class="cell" data-label="Engine">2.5L H4</span>
-                                 <span class="cell" data-label="Trans">Auto</span>
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
                               </div>
-                              <div class="trow">
+                                <div class="trow">
 	                            <input type="radio" name="expand">
-                                <span class="cell primary" data-label="Vehicle">2013 Subaru Legacy</span>
-                                <span class="cell" data-label="Exterior">Twilight Blue Metallic</span>
-                                 <span class="cell" data-label="Interior">Black</span>
-                                 <span class="cell" data-label="Engine">2.5L H4</span>
-                                 <span class="cell" data-label="Trans">Auto</span>
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
                               </div>
-                              <div class="trow">
+                                <div class="trow">
 	                            <input type="radio" name="expand">
-                                <span class="cell primary" data-label="Vehicle">2013 Subaru Forester</span>
-                                <span class="cell" data-label="Exterior">Ice Silver Metallic</span>
-                                 <span class="cell" data-label="Interior">Black</span>
-                                 <span class="cell" data-label="Engine">2.5L H4 Turbo</span>
-                                 <span class="cell" data-label="Trans">Auto</span>
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
+                              </div>
+                                <div class="trow">
+	                            <input type="radio" name="expand">
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
+                              </div>
+                                <div class="trow">
+	                            <input type="radio" name="expand">
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
+                              </div>
+                                <div class="trow">
+	                            <input type="radio" name="expand">
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
+                              </div>
+                                <div class="trow">
+	                            <input type="radio" name="expand">
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
+                              </div>
+                                <div class="trow">
+	                            <input type="radio" name="expand">
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
+                              </div>
+                                <div class="trow">
+	                            <input type="radio" name="expand">
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
+                              </div>
+                                <div class="trow">
+	                            <input type="radio" name="expand">
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
+                              </div>
+                                <div class="trow">
+	                            <input type="radio" name="expand">
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
+                              </div>
+                                <div class="trow">
+	                            <input type="radio" name="expand">
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
+                              </div>
+                                <div class="trow">
+	                            <input type="radio" name="expand">
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
+                              </div>
+                                <div class="trow">
+	                            <input type="radio" name="expand">
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
+                              </div>
+                                <div class="trow">
+	                            <input type="radio" name="expand">
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
+                              </div>
+                                <div class="trow">
+	                            <input type="radio" name="expand">
+                                <span class="cell primary" data-label="ID">0</span>
+                                <span class="cell" data-label="Labels">Event:Calendar</span>
+                                <span class="cell" data-label="Name">Precessional_Era_of_Leo</span>
+                                <span class="cell" data-label="Caption">Precessional Era of Leo</span>
+                                <span class="cell" data-label="Type">Calendar</span>
+                                <span class="cell" data-label="Place">Earth</span>
+                                <span class="cell" data-label="BibleStart">-105</span>
+                                <span class="cell" data-label="BibleEnd">2095</span>
+                                <span class="cell" data-label="GregorianStar">-11080</span>
+                                <span class="cell" data-label="GregorianEnd">-8880</span>
                               </div>
                             </div><!-- end graphTable -->
                         <ul class="pagination">
@@ -132,6 +347,7 @@
                     </div><!-- end tab-pane active -->
 			        <div class="tab-pane" id="two">...</div>
                     <div class="tab-pane" id="three">...</div>
+                    <div class="tab-pane" id="four">...</div>
 		        </div><!-- end tab-content -->
 	        </div><!-- end col-md-12 -->
         </div><!-- end row -->
