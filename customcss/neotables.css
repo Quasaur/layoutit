@@ -1,0 +1,24 @@
+
+.tab-content{width: 100%;}	
+.tab-pane {
+		background: #cacaca;
+		margin: 0;
+		padding: 20px;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	   	
+	}
+    
+    .datascroll{
+    overflow-x: scroll;
+    overflow-y: scroll;
+    height: 600px;
+	}   
+    
+
+table{width: 90%;}
+
+    thead {
+    color:white;
+    background-color: #800030;
+}
+
