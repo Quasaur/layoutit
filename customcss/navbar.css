@@ -45,8 +45,20 @@ nav#pageNavBar{
   padding-bottom: 10px;
 }
 
-@media (width: 768px) {
+
+
+@media (max-width: 768px) {
     .collapse .navbar-collapse{
-        z-index: 2000;
+        display: normal;
+        z-index: 9999;
+        position: relative;
+        background: green;
+    }
+   
+     .nabar-nav{
+        display: normal;
+        z-index: 9999;
+        position: relative;
+        background: green;
     }
 }
