@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>History of the World (TEST SITE)</title>
-
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Bootstrap3 Test Site for New History of the World">
     <meta name="author" content="Calvin L. Mitchell">
+    <title>History of the World (TEST SITE)</title>
 
     <link rel="stylesheet" type="text/css" href="Datatables-1.10.8/css/jquery.dataTables.min.css" />"
     <link rel="stylesheet" type="text/css" href="Bootstrap-3.3.5/css/bootstrap.min.css">
@@ -21,42 +20,45 @@
     <link rel="stylesheet" type="text/css" href="Select-1.0.0/css/select.bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="_customcss/page.css" />
     <link rel="stylesheet" type="text/css" href="_customcss/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="_customcss/colornavbar.css" />
     <link rel="stylesheet" type="text/css" href="_customcss/neotables.css" />
     <link rel="stylesheet" type="text/css" href="_customcss/footer.css" />
     <link rel="stylesheet" type="text/css" href="_customcss/socialicons.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <div class="container-fluid">
-    	<div id="navbarRow" class="row">
-		    <div class="col-md-12">
-			    <nav id="pageNavBar" class="navbar navbar-default">
-				    <div class="navbar-header">
-                        <a class="navbar-brand" href="#" style="color: white;"><strong>History of the World (TEST SITE)</strong></a>
-					    <button 
-                            type="button" 
-                            class="navbar-toggle" 
-                            data-toggle="collapse" 
-                            data-target="#menuItemsDiv">
-						    <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-					    </button> 
-                    </div><!-- end navbar-header -->
-				    <div class="collapse navbar-collapse" id="menuItemsDiv">
-					    <ul id="menuItems" class="nav navbar-nav">
-						    <li class="active"><a href="#">Browse</a></li>
-						    <li><a class="menuitem" href="/add">Add</a></li>
-						    <li><a class="menuitem" href="/map">Map</a></li>
-						    <li><a class="menuitem" href="/chart">Chart</a></li>
-                            <li><a class="menuitem" href="/learn">Learn</a></li>
-						    <li><a class="menuitem" href="/seek">Seek</a></li>
-					    </ul>
-					</div><!-- end collapse navbar-collapse -->
-				</nav>
-		    </div><!-- end col-md-12 -->
-	    </div><!-- end navbarRow -->
+    <div class="container">
+        <nav id="pageNavBar" class="navbar navbar-default">
+			<div class="container-fluid"></div>
+                <div class="navbar-header">
+                    <button 
+                        type="button" 
+                        class="navbar-toggle collapsed" 
+                        data-toggle="collapse" 
+                        data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+				    </button> 
+                    <a class="navbar-brand" href="#"><strong>History of the World (TEST SITE)</strong></a>
+                </div><!-- end navbar-header -->
+			    <div class="navbar-collapse collapse" id="navbar" aria-expanded="true">
+				    <ul id="menuItems" class="nav navbar-nav">
+					    <li class="active"><a href="#">Browse</a></li>
+					    <li><a href="/add">Add</a></li>
+					    <li><a href="/map">Map</a></li>
+					    <li><a href="/chart">Chart</a></li>
+                        <li><a href="/learn">Learn</a></li>
+					    <li><a href="/seek">Seek</a></li>
+				    </ul>
+			    </div><!-- end collapse navbar-collapse -->
+            </div><!-- end container-fluid -->
+		</nav>
 	    <div id="contentRow" class="row">
 		    <div class="col-md-12">
 			    <!-- Nav tabs -->

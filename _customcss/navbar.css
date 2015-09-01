@@ -1,4 +1,10 @@
-nav#pageNavBar{
+/* <nav> tag, classes: navbar & navbar-default */
+.navbar{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.navbar-default{
     background:#317ca2;
     background:-o-linear-gradient(top, #3f94bf, #246485);
     background:-ms-linear-gradient(top, #3f94bf, #246485);
@@ -16,49 +22,52 @@ nav#pageNavBar{
     padding:0;
     border-bottom:1px solid #1b5572;
     color: white;
+    display: block;
+    position: relative;
   }
-.navbar.always-open {
-    border-radius: 0;
-}
-.navbar.always-open .navbar-header {
-  float: none;
-}
-.navbar.always-open .navbar-toggle {
-  display: block;
-}
-.navbar.always-open .navbar-collapse {
-  border-top: 1px solid transparent;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-}
-.navbar.always-open .navbar-collapse.collapse {
-  display: none!important;
-}
-.navbar.always-open .navbar-nav {
-  float: none;
-  margin: 7.5px -15px;
-}
-.navbar.always-open .navbar-nav>li {
-  float: none;
-}
-.navbar.always-open .navbar-nav>li>a {
-  padding-top: 10px;
-  padding-bottom: 10px;
+
+a.navbar-brand{
+    color: white;
 }
 
+/* <ul> tag, classes: nav & navbar-nav */
 
+/* Collapsed menu links */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: yellow;
+}
 
-@media (max-width: 768px) {
-    .collapse .navbar-collapse{
-        display: normal;
-        z-index: 9999;
-        position: relative;
-        background: green;
+@media (max-width: 767px) { /*-- Change max-width from 768 to 767 because Boostrap have an class make navbar always show with min-width=768px, make the navbar show even in collaspe mode - the glitch i told you --*/
+     .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+	/*.navbar-collapse.collapse {
+        display: none!important;
+    }*/  /*-- Disable this, suggest remove - this cause the menu disappear as soon as it toogle in --*/
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+		position:relative;  /*-- Start the lines i suggested use --*/
+		z-index:9999;
+		background-color:#393939;  /*-- End the lines i suggested use --*/
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
    
-     .nabar-nav{
-        display: normal;
-        z-index: 9999;
-        position: relative;
-        background: green;
-    }
 }
