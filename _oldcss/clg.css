@@ -1,0 +1,26 @@
+#clg{
+   position:relative;
+   float:left;
+   left:5px;
+   top:0px;
+   width:95%;
+   height:550px;
+   overflow:scroll;
+  padding-left:0.25in;
+  padding-right:0.25in;
+   border-top: 3px outset lightblue;
+   border-left: 3px outset lightblue;
+   border-bottom: 3px outset lightblue;
+   border-right: 3px outset lightblue;
+   background-color:white;
+   visibility: visible;
+}
+
+
+h1.doc{
+  color:black;
+  text-align:left;
+} 
+
+h3.doc{
+  font-style:italic;}

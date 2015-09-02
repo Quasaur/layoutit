@@ -1,0 +1,181 @@
+/* stylesheet for Add Events form */
+
+#contentForm{
+   position:relative;
+   float:left;
+   left:5px;
+   top:0px;
+   width:95%;
+   height:600px;
+   overflow:auto;
+   border-top: 3px outset lightblue;
+   border-left: 3px outset lightblue;
+   border-bottom: 3px outset lightblue;
+   border-right: 3px outset lightblue;
+   background-color:#3292FC;
+   visibility: visible;
+}
+
+p{
+   line-height:10.px;
+   margin-bottom:0.2em;
+   margin-top:0.2em;
+}
+
+p.pradio1{
+   position:relative;
+   left:-4px;
+   margin-right:-0.5em;
+   margin-bottom:0em;
+   margin-top:0em;
+}   
+
+p.pradio{
+   position:relative;
+   left:70px;
+   text-align:left;
+   margin-bottom:0em;
+   margin-top:0em;
+   width:300px;
+}   
+
+
+label{color:#781351;}
+
+label.lselected{background-color:yellow;background:yellow;}
+label.ldisabled{background-color:white;background:white;}
+
+label.lnormal{
+   clear:left;
+   display:block;
+   float:left;
+   margin-bottom:0.5em;
+   padding-right:10px;
+   text-align:right;
+   width:100px;
+}
+
+label.ltype{
+   clear:left;
+   display:block;
+   float:left;
+   margin-bottom:0.5em;
+   padding-right:10px;
+   text-align:right;
+   width:50px;
+}
+
+label.lradio{
+   float:right;
+   margin-bottom:0.5em;
+   padding-right:10px;
+   text-align:right;
+}
+
+input{}
+
+input.cssSubmit{
+   position:absolute;
+   top:50px;
+   left: 350px;
+}
+
+input.inormal{
+   margin-left: 0.5em;
+   color: #781351;
+   background: #fee3ad;
+   border-width: 1px;border-style: solid;border-color: #781351;}
+
+input.iLink{
+   margin-left: 0.5em;
+   color: #781351;
+   background: #fee3ad;
+   width:540px;
+   border-width: 1px;border-style: solid;border-color: #781351;}
+
+input.hradio{
+   text-align:right;
+   margin-left: -0.5em;
+   color: #781351;
+   background: #fee3ad;
+   border-width: 1px;border-style: solid;border-color: #781351;}
+
+select{}
+
+select.snormal{
+   margin-left: 0.5em;
+   color: #781351;
+   background: #fee3ad;
+   border-width: 1px;border-style: solid;border-color: #781351;}
+
+select.stype{
+   margin-left: -0.5em;
+   color: #781351;
+   background: #fee3ad;
+   border-width: 1px;border-style: solid;border-color: #781351;}
+
+fieldset{}
+
+fieldset.fnormal{
+   position:relative;
+   float:left;
+   top:0px;
+   left:10px;
+   width: 18em;
+   border-width: 1px;border-style: solid;border-color: #781351;
+   background: white;
+}
+
+fieldset.fnormal1{
+   position:relative;
+   float:left;
+   top:0px;
+   left:15px;
+   width: 25em;
+   border-width: 1px;border-style: solid;border-color: #781351;
+   background: white;
+}
+
+fieldset.fnormal2{
+   position:relative;
+   float:left;
+   top:0px;
+   left:10px;
+   width: 43em;
+   border-width: 1px;border-style: solid;border-color: #781351;
+   background: white;
+}
+
+fieldset.fnormal3{
+   position:relative;
+   float:left;
+   top:0px;
+   left:10px;
+   width: 35em;
+   height:10em;
+   border-width: 1px;border-style: solid;border-color: #781351;
+   background: white;
+}
+
+
+fieldset.type{
+      width: 30em;
+}
+
+legend{ font-weight: bold;}
+
+legend.level1{
+   color: #fff;
+   background: #ffa20c;
+   border-width: 1px;border-style: solid;border-color: #781351;
+   padding: 2px 6px
+}
+
+textarea{}
+textarea{
+   color: black;
+   background: #fee3ad;
+   width:45em;
+   height:5em;
+   margin-left:0.5em;
+}

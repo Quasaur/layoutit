@@ -23,6 +23,12 @@
     <link rel="stylesheet" type="text/css" href="_customcss/neotables.css" />
     <link rel="stylesheet" type="text/css" href="_customcss/footer.css" />
     <link rel="stylesheet" type="text/css" href="_customcss/socialicons.css" />
+    <link rel="stylesheet" type="text/css" href="_oldcss/filter.css" />
+    <link rel="stylesheet" type="text/css" href="_oldcss/cha.css" />
+
+    <script type="text/javascript" src="timeline/timeline_js/timeline-api.js?bundle=true"></script>
+    <script type="text/javascript" src="_oldjs/filter.js"></script>
+    <script type="text/javascript" src="_oldjs/histtl.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -30,24 +36,20 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body onload="onLoad();" onresize="onResize();">
     <div class="container">
         <nav id="pageNavBar" class="navbar navbar-default">
-			<div class="container-fluid"></div>
+			<div class="container-fluid">
                 <div class="navbar-header">
-                    <button 
-                        type="button" 
-                        class="navbar-toggle collapsed" 
-                        data-toggle="collapse" 
-                        data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
 				    </button> 
-                    <a class="navbar-brand" href="#" style="color: white;"><strong>History of the World (TEST SITE)</strong></a>
+                    <a class="navbar-brand" href="#" style="color:white;"><strong>History of the World (TEST SITE)</strong></a>
                 </div><!-- end navbar-header -->
-			    <div class="navbar-collapse collapse" id="navbar" aria-expanded="true">
+			    <div class="navbar-collapse collapse" id="navbar">
 				    <ul id="menuItems" class="nav navbar-nav">
 					    <li><a href="/index.html">Browse</a></li>
 					    <li><a href="/add.html">Add</a></li>
@@ -61,9 +63,9 @@
 		</nav>
 	    <div id="contentRow" class="row">
 		    <div class="col-md-12">
-                <!-- Google Spreadsheet iframe -->
+                <!-- SIMILE Timeline content -->
                 <div class="tab-content datascroll">
-                    <iframe frameborder="0" height="800" marginheight="0" marginwidth="0" src="https://www.google.com/fusiontables/embedviz?viz=MAP&amp;q=select+col6+from+3490855+&amp;h=false&amp;lat=61.68987220046001&amp;lng=141.29056319999995&amp;z=3&amp;t=1&amp;l=col6" width="100%">Loading</iframe>
+                    <div id="timeline"><div class="timeline-default" id="tl" style="height: 650px; border: 1px solid #aaa; font-size:10pt"></div><div style="width: 100%"><table style="text-align: center; width: 100%"><tr><td colspan="1" rowspan="1"><a href="javascript:centerTimeline(-11000);" shape="rect">11000 BC</a></td><td colspan="1" rowspan="1"><a href="javascript:centerTimeline(-8000);" shape="rect">8000 BC</a></td><td colspan="1" rowspan="1"><a href="javascript:centerTimeline(-6000);" shape="rect">6000 BC</a></td><td colspan="1" rowspan="1"><a href="javascript:centerTimeline(-4000);" shape="rect">4000 BC</a></td><td colspan="1" rowspan="1"><a href="javascript:centerTimeline(-2000);" shape="rect">2000 BC</a></td><td colspan="1" rowspan="1"><a href="javascript:centerTimeline(-100);" shape="rect">100 BC</a></td><td colspan="1" rowspan="1"><a href="javascript:centerTimeline(2000);" shape="rect">2000 AD</a></td><td colspan="1" rowspan="1"><a href="javascript:centerTimeline(4000);" shape="rect">4000 AD</a></td></tr></table></div><div class="controls" id="controls"></div></div><div class="controls" id="controls">
 		        </div><!-- end tab-content -->
 	        </div><!-- end col-md-12 -->
         </div><!-- end contentRow -->

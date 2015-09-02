@@ -1,0 +1,187 @@
+/* this is the main stypesheet for History of the World -- Spry framework */
+body{
+  background-color: #474d7b;;
+}
+
+h1, h2, h3{
+    font-size: medium;
+}
+
+h1.title{
+  color: white;
+  text-align: center;
+}
+
+p.helptext{
+   margin-left: 0.3em;
+   margin-right: 0.3em;
+   text-align:justify;
+}
+
+#content{
+   position:relative;
+   float:left;
+   left:5px;
+   top:0px;
+   width:99%;
+   height:80%;
+   overflow:auto;
+   border-top: 3px outset lightblue;
+   border-left: 3px outset lightblue;
+   border-bottom: 3px outset lightblue;
+   border-right: 3px outset lightblue;
+   background-color:#3292FC;
+   background : url(../images/wmark.png);
+   background-repeat : no-repeat;
+   background-attachment: fixed;
+   background-position:50% 50%;
+   visibility: visible;
+}
+
+#links{
+   position:relative;
+   float:left;
+   left:5px;
+   top:0px;
+   width:95%;
+   height:490px;
+   overflow:scroll;
+   border-top: 3px outset lightblue;
+   border-left: 3px outset lightblue;
+   border-bottom: 3px outset lightblue;
+   border-right: 3px outset lightblue;
+   background-color:white;
+   visibility: visible;
+}
+
+/* Table Rules
+ * ----------------------------------------------- */
+table{
+   border: 1px solid #666;
+}
+td, th{
+   vertical-align:top;
+}
+th.theading{
+   font-size:10pt;
+   background-color:#b9FFFF;
+   color:black;
+}	
+th.col1a {
+   border-top:none;
+   border-left:solid lightblue 1.0pt;
+   border-bottom:solid lightblue 1.0pt;
+   border-right:none; 
+   padding:0in 5.4pt 0in 5.4pt;
+}
+th.col2a {
+   border-top:none;
+   border-left: none;
+   border-bottom:solid lightblue 1.0pt;
+   border-right:none; 
+   padding:0in 5.4pt 0in 5.4pt;
+}
+th.col3a {
+   border-top:none;
+   border-left: none;
+   border-bottom:solid lightblue 1.0pt;
+   border-right:none; 
+   padding:0in 5.4pt 0in 5.4pt;
+}
+th.col4a {
+   border-top:none;
+   border-left: none;
+   border-bottom:solid lightblue 1.0pt;
+   border-right:none; 
+   padding:0in 5.4pt 0in 5.4pt;
+}
+th.col5a {
+   border-top:none;
+   border-left: none;
+   border-bottom:solid lightblue 1.0pt;
+   border-right:none; 
+   padding:0in 5.4pt 0in 5.4pt;
+}
+th.col6a {
+   border-top:none;
+   border-left: none;
+   border-bottom:solid lightblue 1.0pt;
+   border-right:solid lightblue 1.0pt; 
+   padding:0in 5.4pt 0in 5.4pt;
+}
+
+.col1.col1a{
+   width:12%;
+}
+.col2.col2a{
+   width:14%;
+}
+.col3.col3a{
+   width:14%;
+}
+.col4.col4a{
+   width:20%;
+}
+.col5.col5a{
+   width:40%;
+}
+.col6.col6a{
+   width:12%;
+}
+
+tr td{
+   font-family: "lucida grande", verdana, sans-serif;
+   font-size: 8pt;
+   padding: 3px 8px;
+   background: #fff;
+}
+thead td{
+   color: #fff;
+   background-color: #C8C028;
+   font-weight: bold;
+   border-bottom: 1px solid #999;
+}
+tbody td{
+   border-left: 1px solid #D9D9D9;
+}
+tbody tr.even td{
+   background: #ddd;
+}
+tr.selected td{
+   background: #3292fc;
+   background-color: #3292fc;
+   color: #ffffff;
+   font-weight: bold;
+   border-left: 1px solid #346DBE;
+   border-bottom: 1px solid #7DAAEA;
+}
+tr.ruled td{
+   color: #000;
+   background-color: #C6E3FF; 
+   font-weight: bold;
+   border-color: #3292FC;
+}
+
+tbody tr.white td{
+   background-color: white; 
+}
+
+/* Opera fix */
+head:first-child+body tr.ruled td{
+   background-color: #C6E3FF; 
+}
+
+fieldset {
+  padding: 1em;
+  font:80%/1 sans-serif;
+  background-color: white;
+  }
+
+label {
+  float:left;
+  width:25%;
+  margin-right:0.5em;
+  padding-top:0.2em;
+  text-align:right;
+  font-weight:bold;
+  }
