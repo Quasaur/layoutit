@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="History of the World - New Interface, Old Data">
+    <meta name="author" content="Calvin L. Mitchell">
+    <title>History of the World (TEST Site): Changelog</title>
+
+    <link rel="stylesheet" type="text/css" href="Bootstrap-3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Bootstrap-3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="_customcss/page.css" />
+    <link rel="stylesheet" type="text/css" href="_customcss/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="_customcss/neotables.css" />
+    <link rel="stylesheet" type="text/css" href="_customcss/footer.css" />
+    <link rel="stylesheet" type="text/css" href="_customcss/socialicons.css" />
+    <link rel="stylesheet" type="text/css" href="_oldcss/clg.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+        <nav id="pageNavBar" class="navbar navbar-default">
+			<div class="container-fluid">
+                <div class="navbar-header">
+                    <button 
+                        type="button" 
+                        class="navbar-toggle collapsed" 
+                        data-toggle="collapse" 
+                        data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+				    </button> 
+                    <a class="navbar-brand" href="#" style="color: white;"><strong>History of the World (TEST SITE)</strong></a>
+                </div><!-- end navbar-header -->
+			    <div class="navbar-collapse collapse" id="navbar">
+				    <ul id="menuItems" class="nav navbar-nav">
+					    <li><a href="/index.html">Browse</a></li>
+					    <li><a href="/add.html">Add</a></li>
+					    <li><a href="/map.html">Map</a></li>
+					    <li><a href="/chart.html">Chart</a></li>
+                        <li><a href="/learn.html">Learn</a></li>
+                        <li class="active"><a href="#">Changes</a></li>
+					    <li><a href="/seek.html">Seek</a></li>
+				    </ul>
+			    </div><!-- end collapse navbar-collapse -->
+            </div><!-- end container-fluid -->
+		</nav>
+	    <div id="contentRow" class="row">
+		    <div class="col-md-12">
+                <!-- Google Spreadsheet iframe -->
+                <div class="tab-content datascroll">
+                    <!-- History of the World ChangeLog -->
+                    <div id="clg">
+                        <p><strong>17-August-2015:</strong> Converted app to clojure; next step on roadmap is to switch to Bootstrap3 for responsive web pages.</p>
+                        <p><strong>10-April-2012:</strong> Using Google Docs, Fusion Tables, App Script and UI Forms, Browse, Add and Map tabs are resurrected. History-of-the-World is commited to GitHub.com</p>
+                        <p><strong>18-May-2011:</strong> DabbleDB, having been bought by Twitter, is closed. Browse, Add & Map tabs go blank.</p>
+                        <p><strong>11-Oct-2010:</strong> Began adding Changelog txt as new tab to separate History from main.clmitchell.net. Formatting html for changelog page. Removed ChangeLog link from Links Tab.</p>
+
+                        <p><strong>12-Sep-2010:</strong> new Google Analytics Profile for history.clmitchell.net<br /><br />
+                        <strong>02-Sep-2010:</strong> Changed Type Building to Construction<br /><br />
+                        <strong>01-Sep-2010:</strong> Added Computer History Timeline to Links Tab.</p>
+
+                        <p><strong>27-Aug-2010:</strong> Added google analytics script to all pages.</p>
+
+                        <p><strong>July-2010:</strong> Continuing to tweek class.jsonFile.php to make JSON file compatible with timeline. Created mechanism to escape quotes in description (still have problems with line returns...can fix that in the database itself). Able to load limited amount of data into timeline. Need to remove decimals from Greg. years before Timeline can process...started function to remove them.<br /><br />
+
+                        <strong>04-Jul-2010:</strong> The History of the World SIMILE Timeline chart is (for all intent and purpose) up and running! Next Step? Customizing icons...adding all the captions...adding the ability to filter by event type...still restoring weblinks. Added Paul's Letter to the Romans (58 A.D.).<br /><br />
+
+                        <strong>13-Jul-2010:</strong> Enhanced Chart Tab bubble to include Caption, Region and placeholder for upcoming images!<br /><br />
+
+                        <strong>14-Jul-2010:</strong> Setup state flags as image placeholders for most events.<br /><br />
+
+                        <strong>17-Jul-2010:</strong> Style Updates; Doc updates. Time to put live.js where it belongs.<br /><br />
+
+                        <strong>18-Jul-2010:</strong> Improved the code to render the Timeline Bubble.<br /><br />
+
+                        <strong>21-Jul-2010:</strong> Experimenting with trackNum and trying a 3rd band for decade. Added some more color.<br /><br />
+
+                        <strong>22-Jul-2010:</strong> Decided to restrain image size to 150px and to place resized images on website.<br /><br />
+
+                        <strong>25-Jul-2010:</strong> Successfully exported DabbleDB history dbase to MySQL.</p>
+
+                        <p><strong>June-2010:</strong> Started coding utilty to convert Dabble CSV export to SIMILE Timeline JSON file; created ./utils directory for files. Added the Invention of Terra Preta (450 BC - 950 AD). Added more documentation.<br /><br />
+
+                        Added the Kushan Empire (30 BC - 225 AD). Testing new CSV reader: b3rtCSVReader...parses test.csv perfectly! class.jsonFile.php works perfectly, convert.php virtually complete...problems with Timeline library handling BC dates with 5 places (i.e., "-10847").</p>
+
+                        <p><strong>May-2010:</strong> Adopted Dabble platform for new version of database (historyclm.dabbledb.com). deleted sug.php and man.php; renamed cha.php map.php; removed Accordion on Browse Events and inserted dabble page for default view; expanded width of dsContents, etc. Loaded shared Dabble pages for default view and Add Entry form. Brought back original view of local database (not work).<br /><br />
+
+                        DabbleDB doesn't allow for sql queries; to change multiple records I have to export the data to an excel spreadsheet and massage it there. Unfortunately, in doing so all the views and shared pages I've created become obsolete. Another consequence is that now I have to rebuild all the web links.<br /><br />
+                        Added pages for Docs and Links. Update link to Changelog on main site. Recognized need to modify custom Spry js files for changes to controls and layouts. Removed custom data code from index.php. Dont need Spry anymore...removing it. CSS adjustments. Corrected BibleTime link. Continuing documentation devel.<br /><br />
+                        Did a little code cleanup on add.php. Setup iframe for Map - World. Added "Contact Us" to Seek page. Continuing documentation devel.<br /><br />
+                        Added html4-strict.inc, histtl.js. Added base Timeline to cha.php...just need data now. Continuing divDoc.inc update. Updated timeline_js.js to point to local copy of simile-ajax-api.js. For some reason cha.php works fine on test server but not on bluehost (solved: permissions).<br /><br />
+                        Added "The Colored Patriots of the American Revolution" to Americas\Literature.</p>
+                        <p><strong>May-2009:</strong> Added founding of Lamanai (-1500).</p>
+                        <p><strong>Mar-2009:</strong> Added Atra-Hasis (-1650), the Nebra Sky Disk and Epic of Gilgamesh (1600), Transit of Venus (-920, -912).</p>
+                        <p><strong>Feb-2009:</strong> Added En&#0251;ma Eli&#0154; and Phaistos Disc (-1700).</p>
+                        <p><strong>Jan-2009:</strong> Added the Greek Parthenon. Added the calendar change of -762 BC, Added The Destruction of Carthage (-146) and the -0920 Transit of Venus.</p>
+                        <p><strong>Dec-2008:</strong> Added The Great New Madrid Earthquakes (1811, 1812),</p>
+                        <p><strong>Nov-2008:</strong> Added Sima Qian's  Taichuli calendar and Records of the Grand Historian (-104, -91), Added St. Basi'ls Cathetral (1555, 1561) and the Rus' Primary Chronicle (1116), Added Joan of Arc (1412, 1431), Camille Saint-Sa&#0235;ns (1835, 1921) and Franz Schubert (1797, 1823). Added Fibonacci (1170-1250), Codex Regius (1279).</p>
+
+                        <p><strong>Sep-2008:</strong> Added construction of the Forbidden city (1406, 1420). Added Death of Xinzhui, arguably the most well-preserved mummy in history (-168, 1972). Corrected link for Changelog.</p>
+
+                        <p><strong>Aug-2008:</strong> Added Birth/Death of Tamerlane (1336-1405). Added the demo of Morse's telegraph in 1844. Added the arrival of slaves at Jamestown, VA in 1619 (creating a new event type: "Slavery"). Added the birth/death of Pakal in A.D. 603/683.  Added the Fall of Tayasal in 1697. Made corrections to Bible date 10879 (changed "109" to "-109" and Gregorian date 1618 (Changed "18-Spe-1618" to "18-Sep-1618")</p>
+
+                        <p><strong>26-Feb-2008:</strong> The Add Events Form is visually complete, though pressing the Submit Event Suggestion button won't do anything--yet. I'm using reCAPTCHA for human authentication...when you use it you'll be digitizing books--a good cause. Before I make the form actually work I need to straighten out some style and javascript issues with the Spry Framework and IE6+; Though it is apparent that Spry does work with IE6+ the Spry developers seem satisfied to either bury the IE nuances somewhere deep in the Spry documentation or not mentiion them at all. In any case your patience is appreciated as I work out the kinks.</p>
+
+                        <p><strong>Jan-2008:</strong> Created separate style sheet for Internet Explorer. Trying to figure out why field repopulation doesn't work under Internet Explorer.</p>
+                        <p><strong>Dec-2007:</strong> Filter fields are repopulated with data from the last search. The Jubilee, ERA START and ERA END Event Types have been folden into the Calendar Event Type. A pager has been added to the History currently in production. My thanks to Joe O'Donnell for his paging class RecNav which I have modified for the History.<br />
+
+                        I also thank Vikram Vaswani for his article on sessions. In the course of developing a new version of my History I found the time to optimize and improve the PHP code for the current production version. Now any combination of filters can be used. The code has also been significantly optimized for efficiency (there's also a lot less of it to load). If the release date of the new version continues to recede, I will install a pager for the current production version. Thank you all for your patience and support.
+                        </p>
+                    </div>
+		        </div><!-- end tab-content -->
+	        </div><!-- end col-md-12 -->
+        </div><!-- end contentRow -->
+	    <div id="footerRow"class="row">
+		    <div class="col-md-6">
+			    <div class="panel panel-default">
+				    <div class="panel-heading"><h3 class="panel-title"><strong>Status Log</strong></h3></div>
+				    <div class="panel-body">
+                        <p>This is the TEST site; for the live site, go <a href="http://history.clmitchell.net:82/" target="_blank">HERE</a>.</p>
+                    </div>
+			    </div><!-- end panel panel-default -->
+		    </div><!-- end col-md-6 -->
+		    <div class="col-md-6">
+			    <div class="panel panel-default">
+				    <div class="panel-heading"><h3 class="panel-title"><strong>Contact</strong></h3></div>
+				    <div id="socialpbody" class="panel-body">
+                        <div id="social">
+                            <a class="facebookBtn smGlobalBtn" href="https://www.facebook.com/Quasaur" target="_blank"></a>
+			                <a class="twitterBtn smGlobalBtn" href="https://twitter.com/quasaur" target="_blank"></a>
+			                <a class="googleplusBtn smGlobalBtn" href="//plus.google.com/+CalvinMitchell/about" target="_blank"></a>
+			                <a class="linkedinBtn smGlobalBtn" href="https://www.linkedin.com/in/quasaur" target="_blank"></a>
+			                <a class="pinterestBtn smGlobalBtn" href="https://www.pinterest.com/Quasaur/" target="_blank"></a>
+			                <a class="tumblrBtn smGlobalBtn" href="https://www.tumblr.com/blog/quasaur" target="_blank"></a>
+		                </div>    
+                    </div>
+			    </div><!-- end panel panel-default -->
+		    </div><!-- end col-md-6 -->
+	     </div><!-- end footerRow -->
+    </div><!-- end container-fluid -->
+
+    <script type="text/javascript" src="jQuery-2.1.4/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="Bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_customjs/scripts.js"></script>
+  </body>
+</html>
